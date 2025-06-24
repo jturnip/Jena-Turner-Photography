@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Photography</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+  <div class="header-top">
+    <h1 class="logo">Jena Turner Photography</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="intro">
+    <h2>Inquire</h2>
+    <form id="contact-form" class="contact-form">
+      <label for="name1">Your Name</label>
+      <input type="text" name="name1" placeholder="Jena Turner" required />
+      <label for="name2">Partner's Name</label>
+      <input type="text" name="name2" placeholder="Justin Turner" required />
+      <label for="email">Your Email</label>
+      <input type="email" name="email" placeholder="jenaturnerphotography@gmail.com" required />
+      <label for="phone-number">Phone Number</label>
+      <input type="phone-number" name="number" placeholder="401-000-0000" required />
+      <label for="shoot-type">Shoot Type</label>
+      <select name="shoot-type" placeholder="Type of Shoot" required>
+        <option value="shoot-type" selected disabled hidden>Shoot Type</option>
+        <option value="wedding">Wedding</option>
+        <option value="engagement">Engagement</option>
+        <option value="couple">Couple</option>
+        <option value="family">Family</option>
+        <option value="maternity">Maternity</option>
+        <option value="portrait">Portrait</option>
+      </select>
+      <label for="date">Date of Event (if applicable)</label>
+      <input type="date" name="date"/>
+      <label for="how-did-you-hear">How did you hear about me?</label>
+      <select name="how-did-you-hear" id="how-did-you-hear">
+        <option value="question" selected disabled>How did you hear about me?</option>
+        <option value="social-media">Social Media</option>
+        <option value="client">Client Referral</option>
+        <option value="family-friend">Family/Friend</option>
+        <option value="google">Google</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="message">Anything else I should know?</label>
+      <textarea name="message" rows="5" placeholder="Type your message here"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Photography. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init('ZXtepnU-dEfwaOzC5'); // Replace with your Public Key
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_qugfgdd', 'template_yuwrr2o', this)
+      .then(() => {
+        alert('Message sent successfully!');
+        this.reset();
+      }, (error) => {
+        alert('Failed to send message. Please try again.');
+        console.error(error);
+      });
+  });
+</script>
+
+</body>
+</html>
