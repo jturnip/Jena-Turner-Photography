@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - My Photography</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
- <header>
-  <div class="header-top">
-    <h1 class="logo">Jena Turner Photography</h1>
-    <nav>
-      <div class="hamburger" onclick="toggleMenu()">
-        &#9776;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - My Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <h1 class="logo">Jena Turner Photography</h1>
+        <nav>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    </header>
+    <section class="preview-gallery">
+      <h2>Featured Gallery</h2>
 
-  <section class="intro">
-    <h2>My Portfolio</h2>
-    <p>A curated selection of my best work across weddings, portraits, and events.</p>
-  </section>
+      <div class="shoot-section">
+        <h3>Jackie and CJ</h3>
+        <div class="gallery">
+          <img class="wide" src="./images/CJ_Jackie1.JPG" alt="Portfolio 1" />
+          <img class="wide" src="./images/CJ_Jackie2.JPG" alt="Portfolio 2" />
+          <img class="wide" src="./images/CJ_Jackie3.JPG" alt="Portfolio 3" />
+          <img src="./images/CJ_Jackie4.JPG" alt="Portfolio 4" />
+          <img src="./images/CJ_Jackie5.JPG" alt="Portfolio 5" />
+          <img src="./images/CJ_Jackie6.JPG" alt="Portfolio 6" />
+          <img src="./images/CJ_Jackie7.JPG" alt="Portfolio 7" />
+          <img src="./images/CJ_Jackie8.JPG" alt="Portfolio 8" />
+          <img src="./images/CJ_Jackie9.JPG" alt="Portfolio 9" />
+          <img src="./images/CJ_Jackie10.JPG" alt="Portfolio 10" />
+        </div>
+      </div>
 
-  <section class="gallery">
-    <img src="./images/placeholder1.jpg" alt="Portfolio 1">
-    <img src="./images/placeholder1.jpg" alt="Portfolio 2">
-    <img src="./images/placeholder1.jpg" alt="Portfolio 3">
-  </section>
+      <div class="shoot-section">
+        <h3>Zoya and Zack</h3>
+        <div class="gallery">
+          <img src="./images/Zack_Zoya1.JPG" alt="Portfolio 11" />
+          <img src="./images/Zack_Zoya2.JPG" alt="Portfolio 12" />
+          <img src="./images/Zack_Zoya3.JPG" alt="Portfolio 13" />
+          <img src="./images/Zack_Zoya4.JPG" alt="Portfolio 14" />
+          <img class="wide" src="./images/Zack_Zoya5.JPG" alt="Portfolio 15" />
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 My Photography. All rights reserved.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Jena Turner Photography. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
-
