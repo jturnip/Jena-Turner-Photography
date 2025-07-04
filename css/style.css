@@ -4,11 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
 
 :root {
-  --primary-brown: #8b5e3c;
+  --primary-brown: #6b5b51;
   --warm-beige: #f5efe7;
   --dark-brown: #3b2f2f;
   --off-white: #ffffff;
   --light-tan: #dccebe;
+  --dark-green: #525032;
+  --light-green: #838562;
 }
 
 /* General Styles */
@@ -18,6 +20,10 @@ body {
   background-color: var(--off-white);
   color: var(--dark-brown);
   line-height: 1.6;
+}
+
+.logo {
+  color: var(--dark-brown);
 }
 
 p {
